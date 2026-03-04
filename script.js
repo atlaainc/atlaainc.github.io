@@ -11,13 +11,13 @@
           // Stagger siblings
           const siblings = entry.target.parentElement.querySelectorAll('.reveal');
           siblings.forEach(function (el, i) {
-            el.style.transitionDelay = i * 80 + 'ms';
+            el.style.transitionDelay = i * 120 + 'ms';
           });
           revealObserver.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
   );
 
   document.querySelectorAll('.reveal').forEach(function (el) {
