@@ -248,7 +248,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 7rem var(--container-pad) 5rem;
+  padding: 7rem var(--container-pad) 8rem;
   overflow: hidden;
 }
 
