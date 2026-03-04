@@ -209,7 +209,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
 .nav-link:hover::after { width: 100%; }
 
 .nav-link.nav-cta {
-  color: var(--clr-text);
+  color: #fff;
   background: var(--grad-primary);
   padding: .5rem 1.25rem;
   border-radius: var(--radius-xl);
@@ -274,33 +274,24 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
   position: absolute;
   border-radius: 50%;
   filter: blur(80px);
-  animation: orb-float 12s ease-in-out infinite alternate;
 }
 .orb-1 {
   width: 600px; height: 600px;
   background: radial-gradient(circle, rgba(26,77,143,.1) 0%, transparent 70%);
   top: -150px; left: -150px;
-  animation-duration: 14s;
 }
 .orb-2 {
   width: 500px; height: 500px;
   background: radial-gradient(circle, rgba(181,135,42,.07) 0%, transparent 70%);
   bottom: -100px; right: -100px;
-  animation-duration: 10s;
-  animation-delay: -4s;
 }
 .orb-3 {
   width: 350px; height: 350px;
   background: radial-gradient(circle, rgba(12,31,63,.07) 0%, transparent 70%);
   top: 40%; left: 60%;
-  animation-duration: 16s;
-  animation-delay: -8s;
 }
 
-@keyframes orb-float {
-  from { transform: translate(0, 0) scale(1); }
-  to   { transform: translate(40px, 30px) scale(1.05); }
-}
+
 
 .hero-content {
   position: relative;
@@ -329,12 +320,6 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
   width: 6px; height: 6px;
   background: var(--clr-accent-2);
   border-radius: 50%;
-  animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: .5; transform: scale(.7); }
 }
 
 .hero-headline {
@@ -410,7 +395,6 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
   letter-spacing: .12em;
   text-transform: uppercase;
   color: var(--clr-text-muted);
-  animation: scroll-fade 2s ease-in-out infinite;
 }
 
 .scroll-line {
@@ -419,10 +403,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
   background: linear-gradient(to bottom, var(--clr-text-muted), transparent);
 }
 
-@keyframes scroll-fade {
-  0%, 100% { opacity: .4; }
-  50%       { opacity: 1; }
-}
+
 
 /* ── Buttons ─────────────────────────────────────────────────────────── */
 .btn {
@@ -615,20 +596,16 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
   position: absolute;
   border-radius: 50%;
   border: 1px solid;
-  animation: ring-spin 20s linear infinite;
 }
 
 .ag-ring--1 {
   inset: 0;
   border-color: rgba(12,31,63,.2);
-  animation-duration: 18s;
 }
 
 .ag-ring--2 {
   inset: 30px;
   border-color: rgba(181,135,42,.25);
-  animation-direction: reverse;
-  animation-duration: 25s;
 }
 
 .ag-ring--2::before,
@@ -648,13 +625,9 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
 .ag-ring--3 {
   inset: 60px;
   border-color: rgba(26,77,143,.18);
-  animation-duration: 12s;
 }
 
-@keyframes ring-spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
-}
+
 
 .ag-core {
   position: relative;
